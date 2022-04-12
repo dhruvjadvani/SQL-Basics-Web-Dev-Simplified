@@ -145,3 +145,6 @@ WHERE release_year IS NULL;
 To delete values from table:
 DELETE FROM albums WHERE id = '5';
 
+To join to tables using JOIN:
+SELECT * FROM bands
+JOIN albums ON bands.id = albums.band_id;
