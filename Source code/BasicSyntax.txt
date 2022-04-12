@@ -15,3 +15,9 @@ DROP DATABASE test;    (here test is name of database)
 
 To run the queries on selected database:
 USE test;
+
+To create table:
+CREATE TABLE test (
+  test_column int
+);
+  
