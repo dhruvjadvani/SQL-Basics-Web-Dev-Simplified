@@ -69,3 +69,11 @@ VALUES ('One Direction')
 To insert multiple data into the table:
 INSERT INTO bands(name)
 VALUES ('Young Blood'), ('Ware Wolf'), ('TimberWood');
+
+
+To see the data of table:
+SELECT * FROM bands
+
+
+To limit the data in results:
+SELECT * FROM bands LIMIT 2
