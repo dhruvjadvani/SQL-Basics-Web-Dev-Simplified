@@ -114,3 +114,12 @@ SELECT DISTINCT name FROM albums;
  SET release_year = '2010' WHERE id = '1';
 
 
+To filter data using WHERE:
+SELECT * FROM albums 
+WHERE release_year < 2012;
+
+
+To get the name of items before al and after al using LIKE:
+SELECT * FROM albums
+WHERE name LIKE '%al%';
+ 
