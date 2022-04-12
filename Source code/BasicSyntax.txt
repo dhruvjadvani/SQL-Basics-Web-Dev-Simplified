@@ -148,3 +148,23 @@ DELETE FROM albums WHERE id = '5';
 To join to tables using JOIN:
 SELECT * FROM bands
 JOIN albums ON bands.id = albums.band_id;
+
+3 types of join:
+inner join
+left join
+right join
+
+
+inner join:
+SELECT * FROM bands   // whatever table name write here is left table --> bands
+INNER JOIN albums ON bands.id = albums.band_id; // whatever table name write here is right table --> albums
+
+
+
+in left join all the values of left table will be returned even if the values are null
+left join:
+SELECT * FROM bands
+LEFT JOIN albums ON bands.id = albums.band_id;
+ 
+
+
