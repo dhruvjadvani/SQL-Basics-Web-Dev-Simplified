@@ -175,3 +175,17 @@ RIGHT JOIN albums ON bands.id = albums.band_id;
  
 SELECT * FROM albums
 RIGHT JOIN bands ON bands.id = albums.band_id;
+
+Note: for the most part you're going to use inner and left joins only.
+
+
+What is an Aggregate Function in SQL?
+An aggregate function in SQL returns one value after calculating multiple values of a column. We often use aggregate functions with the GROUP BY and HAVING clauses of the SELECT statement.
+
+Various types of SQL aggregate functions are:
+
+Count()
+Sum()
+Avg()
+Min()
+Max()
