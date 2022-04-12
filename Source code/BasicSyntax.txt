@@ -20,4 +20,12 @@ To create table:
 CREATE TABLE test (
   test_column int
 );
+
+To change data in table we use alter:
+ALTER TABLE test
+ADD another_column VARCHAR(255);     // note here end is at the semicolon so even if we write ADD on row and another_column VARCHAR(255); it will run without any errors.
   
+like this:
+ALTER TABLE test
+ADD another_column
+VARCHAR(255);
