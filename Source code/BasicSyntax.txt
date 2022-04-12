@@ -96,3 +96,21 @@ SELECT * FROM bands ORDER BY name ASC; // alphabetic order
 To set values in descending order:
 SELECT * FROM bands ORDER BY name DESC; // reverse alphabetic order
 
+
+Insert multiple values in album table:
+INSERT INTO albums(name, release_year, band_id) 
+VALUES('Up All Night', '2011', '1'),
+	  ('Take Me Home', '2012', '1'),
+      ('Midnight Memories', '2013', '1'),
+      ('Xero', '1996', '5'),
+      ('Test Album', NULL, '3');
+      
+To get only distinct values from table:
+SELECT DISTINCT name FROM albums;
+ 
+ 
+ To update the values inside the table:
+ UPDATE albums 
+ SET release_year = '2010' WHERE id = '1';
+
+
