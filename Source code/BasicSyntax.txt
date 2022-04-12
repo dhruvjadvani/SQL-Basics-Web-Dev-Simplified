@@ -136,3 +136,12 @@ WHERE name LIKE '%al%'AND band_id = '1';
 using BETWEEN in statement:
 SELECT * FROM albums
 WHERE release_year BETWEEN 1995 AND 2013;
+
+
+using IS in statment:
+SELECT * FROM albums
+WHERE release_year IS NULL;
+
+To delete values from table:
+DELETE FROM albums WHERE id = '5';
+
