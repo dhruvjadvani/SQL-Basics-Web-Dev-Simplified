@@ -200,7 +200,11 @@ SELECT MAX(release_year) FROM albums;
 
 
 GROUP BY:
-SELECT band_id, COUNT(band_id) FROM albums
-GROUP BY band_id;
+SELECT band_id, COUNT(band_id) FROM albums // multiple albums from single band so need to use group by 
+GROUP BY band_id;   
 
-
+Alias and Group by:
+SELECT b.name AS band_name, COUNT(a.id) AS num_albums
+FROM bands as b
+LEFT JOIN albums AS a ON b.id = a.band_id
+GROUP BY b.id;
