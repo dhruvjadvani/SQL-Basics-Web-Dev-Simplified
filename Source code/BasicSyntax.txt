@@ -84,5 +84,15 @@ SELECT name FROM bands           // only returns name column and not the id colu
 
 
 To change the name of column:
-SELECT id as 'ID', name as 'BAND NAME'
+SELECT id as 'ID', name as 'BAND NAME'        //alias
 FROM bands;
+
+To set values in order:
+SELECT * FROM bands ORDER BY name;  // by default alphabetic order
+
+To set values in ascending order:
+SELECT * FROM bands ORDER BY name ASC; // alphabetic order
+
+To set values in descending order:
+SELECT * FROM bands ORDER BY name DESC; // reverse alphabetic order
+
