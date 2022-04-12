@@ -189,3 +189,18 @@ Sum()
 Avg()
 Min()
 Max()
+
+
+SELECT AVG(release_year) FROM albums;
+SELECT SUM(release_year) FROM albums;
+SELECT COUNT(release_year) FROM albums;
+SELECT MIN(release_year) FROM albums;
+SELECT MAX(release_year) FROM albums;
+
+
+
+GROUP BY:
+SELECT band_id, COUNT(band_id) FROM albums
+GROUP BY band_id;
+
+
