@@ -208,3 +208,11 @@ SELECT b.name AS band_name, COUNT(a.id) AS num_albums
 FROM bands as b
 LEFT JOIN albums AS a ON b.id = a.band_id
 GROUP BY b.id;
+
+
+Having: Used after agergate function anf group by. We can not use WHERE before the GROUP BY so we need to use HAVING:
+SELECT b.name AS band_name, COUNT(a.id) AS num_albums
+FROM bands as b
+LEFT JOIN albums AS a ON b.id = a.band_id
+GROUP BY b.id
+HAVING num_albums = 1;
