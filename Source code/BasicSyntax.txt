@@ -32,3 +32,10 @@ VARCHAR(255);
 
 To drop the table:
 DROP TABLE test;
+
+
+To have atleast have one value inside the column of table use not null:
+CREATE TABLE bands (
+	id INT NOT NULL auto_increment,       // here auto_increment will increment the values just like we do in excel sheet
+	name VARCHAR(255) NOT NULL
+);
