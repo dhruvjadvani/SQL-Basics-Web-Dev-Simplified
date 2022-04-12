@@ -1,1 +1,6 @@
+Note: SQL is not case sensitive language as long as you write correct keywords it will execute the queries.
 
+To select any table: 
+select * from table_name;
+
+string --> 'String' inside the single quote
