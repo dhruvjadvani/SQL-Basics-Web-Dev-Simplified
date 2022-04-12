@@ -132,3 +132,7 @@ WHERE name LIKE '%al%'OR band_id = '1';
 using AND in statement:
 SELECT * FROM albums
 WHERE name LIKE '%al%'AND band_id = '1';
+
+using BETWEEN in statement:
+SELECT * FROM albums
+WHERE release_year BETWEEN 1995 AND 2013;
