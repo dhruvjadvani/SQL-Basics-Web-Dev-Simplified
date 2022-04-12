@@ -77,3 +77,12 @@ SELECT * FROM bands
 
 To limit the data in results:
 SELECT * FROM bands LIMIT 2
+
+To get only specific column:
+SELECT name FROM bands           // only returns name column and not the id column
+
+
+
+To change the name of column:
+SELECT id as 'ID', name as 'BAND NAME'
+FROM bands;
