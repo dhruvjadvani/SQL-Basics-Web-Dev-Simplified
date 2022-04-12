@@ -123,3 +123,12 @@ To get the name of items before al and after al using LIKE:
 SELECT * FROM albums
 WHERE name LIKE '%al%';
  
+
+
+using OR in statement:
+SELECT * FROM albums
+WHERE name LIKE '%al%'OR band_id = '1';
+
+using AND in statement:
+SELECT * FROM albums
+WHERE name LIKE '%al%'AND band_id = '1';
