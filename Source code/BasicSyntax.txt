@@ -167,4 +167,11 @@ SELECT * FROM bands
 LEFT JOIN albums ON bands.id = albums.band_id;
  
 
-
+in left join all the values of right table will be returned even if the values are null
+right table:
+SELECT * FROM bands
+RIGHT JOIN albums ON bands.id = albums.band_id;
+ 
+ 
+SELECT * FROM albums
+RIGHT JOIN bands ON bands.id = albums.band_id;
