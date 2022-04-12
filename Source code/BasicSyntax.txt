@@ -1,13 +1,17 @@
 Note: SQL is not case sensitive language as long as you write correct keywords it will execute the queries.
 
 To select any table: 
-select * from table_name;
+SELECT * FROM table_name;
 
 string --> 'String' inside the single quote
 
 
 To create database:
-create database test  (here test is name of database)
+CREATE DATABASE test;  (here test is name of database)
 
 To delete the database:
-drop database test    (here test is name of database)
+DROP DATABASE test;    (here test is name of database)
+
+
+To run the queries on selected database:
+USE test;
