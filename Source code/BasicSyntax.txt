@@ -29,3 +29,6 @@ like this:
 ALTER TABLE test
 ADD another_column
 VARCHAR(255);
+
+To drop the table:
+DROP TABLE test;
