@@ -39,3 +39,13 @@ CREATE TABLE bands (
 	id INT NOT NULL auto_increment,       // here auto_increment will increment the values just like we do in excel sheet
 	name VARCHAR(255) NOT NULL
 );
+
+to uniquely identify the column we add ID to it
+
+
+Primary key: primary identifing column for that table
+CREATE TABLE bands(
+	id INT NOT NULL auto_increment,
+	name VARCHAR(255) NOT NULL,
+        PRIMARY KEY(id)
+);
